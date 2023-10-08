@@ -1,0 +1,247 @@
+#booknote 
+# Chapter 1
+- We can gradually extend from natural numbers $\mathbb{N}$ to a larger number system, in order for it to have certain operations and properties
+	- $\mathbb{N} = \{1,2,3,4,5, \ldots\}$
+	- $\mathbb{Z} = \{\ldots,-3,-2,-1,0,1,2,3,\ldots\}$
+	- $\mathbb{Q} = \{\text{all fractions } \frac{p}{q} \text{ where } p \text{ and } q \text{ are integers with } q \neq 0\}$
+		- $\mathbb{Q}$ is a field, where addition, multiplication are well defined operations that are commutative, associative and obey distributive property. There also exists the additive and multiplicative identities, and every element must have an additive and multiplicative inverse
+		- $\mathbb{Q}$ has a natural order defined, where given any 2 rational numbers $r$ and $s$, exactly one of these is true:
+			- $r < s$
+			- $r = s$
+			- $r > s$
+		- $\mathbb{Q}$ has "holes", as it cannot contain square roots like $\sqrt{2}, \sqrt{3}$ or $\sqrt{5}$. We will need to construct the real numbers, $\mathbb{R}$, to deal with these "holes"
+- $\bigcap_{n=1}^{\infty}A_n = \emptyset$
+	- Proof: assume that there exists an $m$ such that $m \in \bigcap_{n=1}^{\infty}A_n$. However, since $m \notin A_{m+1}$, it cannot be in $\bigcap_{n=1}^{\infty}A_n$
+- Proof by Induction
+	- Fundamental principle: if $S$ is some subset of $\mathbb{N}$ with properties, then $S = \mathbb{N}$
+		- $S$ contains 1
+		- whenever $S$ contains $n$, then it also contains $n + 1$
+- $\mathbb{R}$ is an ordered field, contains $\mathbb{Q}$ as a subfield
+- Axiom of Completeness
+	- This precisely defines the difference between $\mathbb{Q}$ and $\mathbb{R}$
+		- For example, for the set $S = \{r \in \mathbb{Q} : r^2 < 2\}$, there is no supremum in $\mathbb{Q}$
+	- Every nonempty set of real numbers that is bounded above has a least upper bound
+- Least Upper Bounds (Supremum) & Greatest Lower Bounds (Infimum)
+	- A set $A \in \mathbb{R}$ is bounded above if there exists a number $b \in \mathbb{R}$ such that $a \leq b$ for all $a \in A$. $b$ is called the upper bound for $A$
+	- Similarly, $A$ is bounded below if there exists a lower bound $l \in \mathbb{R}$ satisfying $l \leq a$ for all $a \in A$
+	- A real number $s$ is the least upper bound for $A \in \mathbb{R}$ if
+		- $s$ is an upper bound for $A$
+		- if $b$ is any upper bound for $A$, then $s \leq b$
+			- Can be restated with this Lemma: Assume $s \in \mathbb{R}$ is an upper bound for a set $A \subseteq \mathbb{R}$. Then, $s = \text{ sup } A$ if and only if, for every choice of $\epsilon > 0$, there exists an element $a \in A$ satisfying $s - \epsilon < a$ 
+	- Supremums are unique, as if there are 2 of them, $s_1$ and $s_2$, they also obey the inequalities $s_1 \leq s_2$ and $s_2 \leq s_1$, hence $s_1 = s_2$
+	- Supremums and infimums of sets may or may not be in the sets
+		- A real number $a_o$ is a maximum of the set $A$ if $a_o \in A$ and $a_o \geq a$ for all $a \in A$. Similarly, $a_1$ is a minimum of $A$ if $a_1 \in A$ and $a_1 \leq a$ for all $a \in A$
+- Nested Interval Property
+	- For each $n \in \mathbb{N}$, assume we are given a closed interval $I_n = [a_n,b_n] = \{x \in \mathbb{R} : a_n \leq x \leq b_n\}$. Assume also that each $I_n$ contains $I_{n+1}$, then the resulting nested sequence of closed intervals $I_1 \supseteq I_2 \supseteq I_3 \supseteq I_4 \supseteq \ldots$ has a nonempty intersection, $\bigcap_{n=1}^{\infty}I_n \neq \emptyset$
+	- Proof
+		- For the set $A = \{a_n : n \in \mathbb{N}\}$, every $b_n$ is an upper bound for $A$
+		- Let $x = \text{ sup } A$
+		- Consider a particular $I_n = [a_n,b_n]$. Since $x = \text{ sup } A$, $a_n \leq x$. Since $x$ is least upper bound, $x \leq b_n$
+		- $a_n \leq x \leq b_n$, which implies that $x \in I_n$ for all $n \in \mathbb{N}$, hence $x \in \bigcap_{n=1}^{\infty}I_n$ and the intersection is not empty
+- Archimedean Property
+	- Given any $x \in \mathbb{R}$, there exists an $n \in \mathbb{N}$ satisfying $n > x$
+	- Given any real number $y > 0$, there exists an $n \in \mathbb{N}$ satisfying $\frac{1}{n} < y$
+	- Proof
+		- Assume that $\mathbb{N}$ is bounded, then there should exist an $\alpha = \text{ sup } \mathbb{N}$. Consider $\alpha - 1$, which is not an upper bound of $\mathbb{N}$, hence there should exist some $n \in \mathbb{N}$ such that $\alpha - 1 < n$, which implies $\alpha < n + 1$, which contradicts the fact that $\alpha = \text{ sup } \mathbb{N}$ as $n + 1 \in \mathbb{N}$. Hence, $\mathbb{N}$ is not bounded.
+		- For the second property, it can be reworded as $\frac{1}{y} < n$. Assume that $\mathbb{N}$ is bounded below, then there should exist an $\beta = \text{ inf } \mathbb{N}$. Consider $\beta + 1$, which is not a lower bound of $\mathbb{N}$, hence there should exist some $n \in \mathbb{N}$ such that $n < \beta + 1$, which implies $n - 1 < \beta$, which contradicts that fact that $\beta = \text{ inf } \mathbb{N}$ as $n - 1 \in \mathbb{N}$. Hence, $\mathbb{N}$ is not bounded from below.
+- Density of $\mathbb{Q}$ in $\mathbb{R}$
+	- For every 2 real numbers $a$ and $b$ with $a < b$, there exists a rational number $r$ satisfying $a < r < b$
+	- Proof
+		- We need to show that there exists some $m \in \mathbb{Z}$ and $n \in \mathbb{N}$ such that $a < \frac{m}{n} < b$
+		- Using the Archimedean Property, pick $n \in \mathbb{N}$ such that $\frac{1}{n} < b - a$. Next, we choose some $m \in \mathbb{Z}$ such that $m - 1 \leq na < m$
+		- $$\begin{align}m &\leq na + 1 \\ &< n(b - \frac{1}{n}) + 1 \\ &= nb\end{align}$$
+		- Hence, we arrive with inequalities $na < m$ and $m < nb$, which implies $a < \frac{m}{n} < b$
+- Cardinality
+	- A function is one-to-one if $a_1 \neq a_2$ implies $f(a_1) \neq f(a_2)$
+	- A function is onto if given any $b \in B$, there exists some $a \in A$ such that $f(a) = b$
+	- $A$ has the same cardinality as $B$, or $A \sim B$ if there exists some function $f : A \rightarrow B$ that is one-to-one and onto
+- A set $A$ is countable if $\mathbb{N} \sim A$. An infinite set that is not countable is an uncountable set
+- $\mathbb{Q}$ is countable
+	- Proof
+		- Let $A_1 = \{0\}$ and $A_n = \{\pm\frac{p}{q} : \text{ where } p,q \in \mathbb{N} \text{ are lowest terms with } p + q = n\}$
+		- By consecutively listing the elements of $A_n$, we can create a 1-1 correspondence with $\mathbb{N}$, as $A_n$ are all disjoint
+- $\mathbb{R}$ is uncountable
+	- Proof
+		- Assume that there exists a 1-1, onto function $f : \mathbb{N} \rightarrow \mathbb{R}$
+		- Let $I_n$ be a closed interval such that $I_{n+1} \subseteq I_n$ and $x_{n+1} \notin I_{n+1}$
+		- If $x_{n_{0}}$ in image of function, then $x_{n_0} \notin I_{n_0}$ and $x_{n_0} \notin \bigcap_{n=1}^{\infty}I_n$
+		- Assuming the image of the function is the set of all real numbers, then $\bigcap_{n=1}^{\infty}I_n = \emptyset$, which contradicts the Nested Interval Property, which states that there exists at least one $x$ in the intersection, which consequently, cannot be in the image of the function
+		- Hence, $\mathbb{R}$ cannot be enumerated and is an uncountable set
+- There are different types of infinities
+	- Countable sets are the smallest type of infinite set
+- Cantor's Theorem
+	- Given any set $A$, there does not exist a function $f : A \rightarrow P(A)$ that is onto
+	- Proof
+		- Assume that $f : A \rightarrow P(A)$ is onto
+		- For each element $a \in A$, consider the subset $f(a)$. This subset may or may not contain $a$. If $f(a)$ contains $a$, we include $a$ in $B$
+			- $B = \{a \in A : a \notin f(a)\}$
+		- If $f$ is onto, then $B = f(a')$ for some $a' \in A$. There is a contradict when considering if $a'$ is a member of $B$
+- Power Sets
+	- A power set $P(A)$ is the collection of all subsets of $A$
+- The relationship of having the same cardinality is an equivalence relation, meaning, all of the sets in the mathematical universe can be organized into disjoint groups according to their size
+	- $\mathbb{N}, \mathbb{Z}$ and $\mathbb{Q}$ are countable sets
+	- $\mathbb{R}, (a,b)$ and $P(\mathbb{N})$
+	- By Cantor's Theorem, $P(\mathbb{R})$ and $\mathbb{R}$ are of different "classes"
+- Big Ideas
+	- $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$
+		- $\mathbb{Q}$ and $\mathbb{R}$ are ordered fields
+		- $\mathbb{R}$ is an extension of $\mathbb{Q}$ to include square roots
+	- The idea of induction is that if a set that contains the property that you are trying to prove can be mapped to $\mathbb{N}$, 
+	- Axiom of Completeness gives rise to the Nest Interval Property, which 
+- Exercises
+	- 1.2.1
+		- a)
+			- Assume that there exists some rational number $\frac{p}{q} = \sqrt{3}$ and that integers $p$ and $q$ do not have any common denominators.
+			- $$\begin{align}\frac{p^2}{q^2} &= 3 \\ p^2 &= 3q^2\end{align}$$
+			- This would imply that $p^2$ is divisible by 3, and can be represented as $3r = p$.
+			- $$\begin{align}p^2 &= 3q^2 \\ (3r)^2 &= 3q^3 \\ 9r^2 &= 3q^2 \\ 3r^2 &= q^2\end{align}$$
+			- This would imply that $q^2$ is also divisible by 3. We now show that if $p^2$ is divisible by 3, then $p$ is also divisible by 3. Let us assume the opposite first, that given some $p^2$ that is divisible by 3, $p$ is not divisible by 3. Hence, when $p$ is divided by 3, the remainder is either 1 or 2. In those cases, $p$ can be represented as $3r + 1$ or $3r + 2$, where $r$ is divisible by 3. Hence, $p^2$ would either be $(3r + 1)^2 = 9r^2 + 6r + 1 = 3(3r^2 + 2r) + 1$ or $(3r + 2)^2 = 9r^2 + 12r + 4 = 3(3r^2 + 4r + 1) + 1$, and would not be divisible by 3, hence a contradiction arises. This implies that if $p^2$ is divisible by 3, then $p$ is also divisible by 3.
+			- Hence, both $p$ and $q$ are divisible by 3, which contradicts the initial assumption that they have no common denominators, hence there does not exists any rational numbers $\frac{p}{q} = \sqrt{3}$.
+			- Using a similar argument to proof that $\sqrt{6}$ is irrational works, as the key step is to show that $p^2$ being divisible by 6 implies that $p$ is also divisible by 6.
+				- $(6r + 1)^2 = 36r^2 + 12r + 1 = 6(6r^2 + 2r) + 1$
+				- $(6r + 2)^2 = 36r^2 + 24r + 4 = 6(6r^2 + 4r) + 4$
+				- $(6r + 3)^2 = 36r^2 + 36r + 9 = 6(6r^2 + 6r + 1) + 3$
+				- $(6r + 4)^2 = 36r^2 + 48r + 16 = 6(6r^2 + 8r + 2) + 4$
+				- $(6r + 5)^2 = 36r^2 + 60r + 25 = 6(6r^2 + 10r + 4) + 1$
+		- b)
+			- Using Theorem 1.1.1, we get: $$\begin{align}\frac{p}{q} &= \sqrt{4} \\ \frac{p^2}{q^2} &= 4 \\ p^2 &= 4q^2\end{align}$$ Which means that $p^2$ is even, as $4q^2 = 2(2q^2)$. Hence, we can rewrite $p^2 = 4q^2$ as $(2r)^2 = 4q^2$, which is $r^2 = q^2$. This does not tell us anything about $q$, like in Theorem 1.1.1, hence it breaks down.
+	- 1.2.2
+		- We first assume there exists some rational number $r = \frac{p}{q}$ such that $2^r = 3$. $$\begin{align}2^r &= 3 \\ 2^{\frac{p}{q}} &= 3 \\ 2^p &= 3^q\end{align}$$
+		- $2^p$ will be an even number, for any integer $p$ while $3^q$ will be an odd number, for any integer $q$. Hence, there is a contradiction and there is no rational number $r = \frac{p}{q}$ satisfying $2^r = 3$
+	- 1.2.3
+		- a)
+			- False. Let $A_i = \{i, i+1, i+2, \ldots\} \subset \mathbb{N}$. The intersection $\bigcap_{n=1}^{\infty}A_n = \emptyset$
+		- b)
+			- True
+		- c)
+			- False. Let $A = \{1,2\}, B = \{2,3\}, C = \{3,4\}$, then $A \cap (B \cup C) = \{2\} \neq \{2,3,4\} = (A \cap B) \cup C$
+		- d)
+			- True
+		- e)
+			- True
+	- 1.2.4
+		- Let $A_p = \{p^a : p \text{ is a prime and } a > 0\}$. $\mathbb{N} = \bigcup_{p \in \mathbb{P}}A_p \cup \{x : x \text{ does not have any prime factors}\}$
+	- 1.2.5
+		- $$\begin{align}(A \cap B)^c &= (A \cap B^c) \cup (A^c \cap B) \cup (A^c \cup B^c) && \text{ by definition} \\ &= (A \cap B^c) \cup (A^c \cap B^c) \cup (A^c \cap B) \cup (A^c \cap B^c) \\ &= B^c \cup A^c \end{align}$$
+	- 1.2.6
+		- a)
+			- If $a > 0$ and $b > 0$, then $\lvert a + b \rvert = a + b$, $\lvert a \rvert = a$ and $\lvert b \rvert = b$. Hence, $\lvert a + b \rvert = a + b = \lvert a \rvert + \lvert b \rvert$
+			- If $a < 0$ and $b < 0$, then $\lvert a + b \rvert = \lvert (-1)((-a) + (-b)) \rvert = (-a) + (-b)$, $\lvert a \rvert = -a$ and $\lvert b \rvert = -b$. Hence, $\lvert a + b \rvert = (-a) + (-b) = \lvert a \rvert + \lvert b \rvert$
+			- If $a = b = 0$, then $\lvert a + b \rvert = 0 = \lvert a \rvert + \lvert b \rvert$
+			- Hence, the triangle inequality is verified in all 3 cases where $a$ and $b$ have the same signs
+		- b)
+			- $$\begin{align}(a + b)^2 &= \lvert (a + b)^2 \rvert && (a + b)^2 \text{ is always positive} \\ &= \lvert a + b \vert \lvert a + b \rvert \\ &\leq (\lvert a \rvert + \lvert b \rvert)(\lvert a \rvert + \lvert b \rvert) && \text{ by triangle inequality} \\ &= (\lvert a \rvert + \lvert b \rvert)^2 \end{align}$$
+		- c)
+			- $$\begin{align}\lvert a - b \vert &= \lvert a - c + c - b \rvert \\ &\leq \lvert a - c \rvert + \lvert c - b \rvert && \text{by triangle inequality} \\ &\leq \lvert a - c \rvert + \lvert c - d + d - b \rvert \\ &\leq \lvert a - c \rvert + \lvert c - d \rvert + \lvert d - b \rvert && \text{by triangle inequality} \end{align}$$
+		- d)
+			- $$\begin{align}\lvert \lvert a \rvert - \lvert b \rvert \rvert &= \lvert \lvert a - b + b \rvert - \lvert b \rvert \rvert \\ &\leq \lvert a - b \rvert + \lvert b \rvert - \lvert b \rvert && \text{by triangle inequality} \\ &\leq \lvert \lvert a -b \rvert \rvert \\ &\leq \lvert a - b \rvert && \text{by definition} \end{align}$$
+	- 1.2.7
+		- a)
+			- $f(A) = [0,4]$ and $f(B) = [1,16]$
+			- $f(A \cap B) = f([1,2]) = [1,4] = f(A) \cap f(B)$
+			- $f(A \cup B) = f([0,4]) = [0,16] = f(A) \cup f(B)$
+		- b)
+			- $A = [0,1]$ and $B = [-1,0]$
+			- $f(A \cap B) = f(\{0\}) = \{0\} \neq [0,1] = f(A) \cap f(B)$
+		- c)
+			- For some arbitrary function $g : \mathbb{R} \rightarrow \mathbb{R}$, if $x \in g(A \cap B)$
+			- Then, there should exist some $y$ such that $y \in A \cap B$ and $g(y) = x$
+			- This implies that $g(y) \in g(A)$ and $g(y) \in g(B)$, hence $x \in g(A)$ and $x \in g(B)$, and ultimately, $x \in g(A) \cap g(B)$
+		- d)
+			- Let $g(A \cup B) \subseteq g(A) \cup g(B)$ for some arbitrary function $g : \mathbb{R} \rightarrow \mathbb{R}$.
+			- Proof
+				- Then, there should exist some $y$ such that $y \in A \cup B$ and $g(y) = x$
+				- This implies that $g(y) \in g(A)$ or $g(y) \in g(B)$, hence $x \in g(A)$ or $x \in g(B)$, and ultimately, $x \in g(A) \cup g(B)$
+	- 1.2.8
+		- a)
+			- $f(x) = x + 1$. $f(1) \notin \mathbb{N}$
+		- b)
+			- $f(x) = \lvert x - 2 \rvert$. $f(1) = 1 = f(3)$
+		- c)
+			- $$f(x) = \begin{cases} &\frac{x}{2} && \text{if } x \text{ is even} \\ &-\frac{x - 1}{2} && \text{if } x \text{ is odd}\end{cases}$$
+	- 1.2.9
+		- a)
+			- $f^{-1}(A) = [-2,2]$ and $f^{-1}(B) = [-1,1]$
+			- $f^{-1}(A \cap B) = f^{-1}([0,1]) = [-1,1] = f^{-1}(A) \cap f^{-1}(B)$
+			- $f^{-1}(A \cup B) = f^{-1}([-1,4]) = [-2,2] = f^{-1}(A) \cup f^{-1}(B)$
+		- b)
+			- Proof for $g^{-1}(A \cap B) \subseteq g^{-1}(A) \cap g^{-1}(B)$
+				- For some arbitrary function $g : \mathbb{R} \rightarrow \mathbb{R}$, if $x \in g^{-1}(A \cap B)$, then there exists some $y \in A \cap B$ such that $g(x) = y$
+				- This implies that $g(x) \in A \cap B$, which then implies that $g(x) \in A$ and $g(x) \in B$
+				- Hence, $x \in g^{-1}(A)$ and $x \in g^{-1}(B)$, which results in $x \in g^{-1}(A) \cap g^{-1}(B)$ and $g^{-1}(A \cap B) \subseteq g^{-1}(A) \cap g^{-1}(B)$
+			- Proof for $g^{-1}(A) \cap g^{-1}(B) \subseteq g^{-1}(A \cap B)$
+				- For some arbitrary function $g : \mathbb{R} \rightarrow \mathbb{R}$, if $x \in g^{-1}(A) \cap g^{-1}(B)$, then there exists some $y \in A \cap B$ such that $g(x) = y$
+				- Hence, $y \in A \cap B$ and $g^{-1}(A) \cap g^{-1}(B) \subseteq g^{-1}(A \cap B)$
+			- Proof for $g^{-1}(A \cup B) \subseteq g^{-1}(A) \cup g^{-1}(B)$
+				- Similarly, for some arbitrary function $g : \mathbb{R} \rightarrow \mathbb{R}$, if $x \in g^{-1}(A \cup B)$, then there exists some $y \in A \cup B$ such that $g(x) = y$
+				- This implies that $g(x) \in A \cup B$, which then implies $g(x) \in A$ or $g(x) \in B$
+				- Hence, $x \in g^{-1}(A)$ or $x \in g^{-1}(B)$, which results in $x \in g^{-1}(A) \cup g^{-1}(B)$ and $g^{-1}(A \cup B) \subseteq g^{-1}(A) \cup g^{-1}(B)$
+			- Proof for $g^{-1}(A) \cup g^{-1}(B) \subseteq g^{-1}(A \cup B)$
+				- For some arbitrary function $g : \mathbb{R} \rightarrow \mathbb{R}$, if $x \in g^{-1}(A) \cup g^{-1}()B$, then there exists some $y \in A$ or $y \in B$ such that $g(x) = y$
+				- Hence, $y \in A \cup B$ and $g^{-1}(A) \cup g^{-1}(B) \subseteq g^{-1}(A \cup B)$
+	- 1.2.10
+		- a)
+			- False. For any real numbers $a = b$, $a < b + \epsilon$ for all $\epsilon > 0$, but $a \nless b$
+		- b)
+			- False. For any real numbers $a = b$, $a < b + \epsilon$ for every $\epsilon > 0$, but $a \nless b$
+		- c)
+			- True
+	- 1.2.11
+		- a)
+			- There exists some real numbers $a < b$ such that there are no natural numbers $n \in \mathbb{N}$ that satisfies $\frac{a + 1}{n} < b$
+		- b)
+			- For all real numbers $x > 0$ and $n \in \mathbb{N}$, $x \geq \frac{1}{n}$
+		- c)
+			- There exists some distinct pairs of real numbers such that there are no rational numbers between them
+	- 1.2.12
+		- a)
+			- $y_1 > -6$
+			- Assume $y_n > -6$. $$\begin{align}y_n &> -6 \\ 2y_n &> -12 \\ 2y_n -6 &> -18 \\ \frac{2y_n - 6}{3} &> -6 \\ y_{n+1} &> -6 \end{align}$$
+		- b)
+			- $y_1 = 6$ and $y_2 = \frac{2y_1 - 6}{3} = 2$, hence $y_1 > y_2$
+			- Assume $y_n > y_{n+1}$. $$\begin{align}y_{n} &> y_{n+1} \\ \frac{2y_n - 6}{3} &> \frac{2y_{n+1} - 6}{3} \\ y_{n+1} &> y_{n+2}\end{align}$$
+	- 1.2.13
+		- a)
+			- For n = 1, $A_1^c = A_1^c$
+			- Assume that $(A_1 \cup A_2 \cup \ldots \cup A_n)^c = A_1^c \cap A_2^c \cap \ldots \cap A_n^c$. $$\begin{align}(A_1 \cup A_2 \cup \ldots \cup A_n \cup A_{n+1})^c &= (A_1 \cup A_2 \cup \ldots \cup A_n)^c \cap A_{n+1}^c && \text{by De Morgan's Laws} \\ &= A_1^c \cap A_2^c \cap \ldots \cap A_n^c \cap A_{n+1}^c && \text{by induction hypothesis} \end{align}$$
+		- b)
+			- $B_i = \{i, i+1, i+2, \ldots\}$
+		- c)
+			- $$\begin{align}x \in (\bigcup_{i=1}^{\infty}A_i)^c &\iff x \notin \bigcup_{i=1}^{\infty}A_i \\ &\iff \text{for all } i \in [1,\infty), x \notin A_i \\ &\iff \text{for all } i \in [1, \infty), x \in A_i^c \\ &\iff x \in \bigcap_{i=1}^{\infty}A_i^c \end{align}$$
+	- 1.3.1
+		- a)
+			- A real number $l$ is the greatest upper bound for a set $A \subseteq \mathbb{R}$ if it meets the following 2 criteria
+				- $l$ is a lower bound for $A$
+				- if $b$ is any lower bound for $A$, then $l \geq b$
+		- b)
+			- Assume $l \in \mathbb{R}$ is a lower bound for a set $A \subseteq \mathbb{R}$. Then, $l = \text{inf } A$ if and only if, for every choice of $\epsilon > 0$, there exists an element $a \in A$ satisfying $l +\epsilon > a$
+			- Proof
+				- Proof for $(\Rightarrow)$
+					- Assume that $l = \text{inf } A$, and that $\epsilon > 0$, hence $l + \epsilon > l$ and is not a lower bound of $A$
+					- Hence, there should be some element $a \in A$ such that $a < l + \epsilon$
+				- Proof for $(\Leftarrow)$
+					- Assume that $l$ is a lower bound of $A$ such that no matter how $\epsilon > 0$ is chosen, $l + \epsilon$ is no longer a lower bound of $A$, since $a < l + \epsilon$
+					- Hence, if $b$ is any number more than $l$, it is also not a lower bound of $A$
+					- This implies that if $b$ is some other lower bound for $A$, then $l \geq b$
+	- 1.3.2
+		- a)
+		- b)
+			- $[0,1)$
+		- c)
+	- 1.3.3
+		- 
+# Chapter 2
+- Operations like $+, -$ and $=$, which are well defined on finite sums may or may not be valid for infinite sums
+	- Similar considerations as operations on finite and infinite sets
+	- Addition is not commutative in all cases of infinite sums
+- Limit of a sequence
+	- A sequence is a function whose domain is $\mathbb{N}$, essentially an infinite list of real numbers
+	- A sequence $(a_n)$ converges to a real number $a$ if, for every positive number $\epsilon$, there exists an $N \in \mathbb{N}$ such that whenever $n \geq N$ it follows that $\lvert a_n - a \rvert < \epsilon$
+		- $lim_{n \rightarrow \infty}a_n = a$
+	- Given a real number $a \in \mathbb{R}$ and positive number $\epsilon > 0$, $V_{\epsilon}(a) = \{x \in \mathbb{R} : \lvert x - a \rvert < \epsilon\}$ is the $\epsilon$-neighborhood of $a$
+		- Consists of all points distance from $a$ is less than $\epsilon$
+		- Interval centered at $a$, with radius $\epsilon$
+	- A sequence $(a_n)$ converges to $a$ if, given any $\epsilon$-neighborhood $V_{\epsilon}(a)$ of $a$, there exists a point in the sequence after which all of the terms are in $V_{\epsilon}(a)$
+		- Every $\epsilon$-neighborhood contains all but a finite number of the terms of $(a_n)$
+		- The smaller $V_{\epsilon}(a)$ is, the larger $N$ has to be
+- Exercises

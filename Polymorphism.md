@@ -1,0 +1,1 @@
+"**polymorphism** is the provision of a single interface to entities of different types or the use of a single symbol to represent multiple different types." - https://en.wikipedia.org/wiki/Polymorphism_(computer_science)

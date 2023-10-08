@@ -1,0 +1,33 @@
+#booknote 
+# Chapter 1
+- Types of sample spaces
+	- Countable - if elements of the sample space can be in 1-1 correspondence to subset of integers or only contains finite number of elements
+	- Uncountable
+- Realization of experiments is an outcome (subset of) in the sample space
+	- "Frequency of occurrence" of an outcome can be thought of as a probability (more frequent outcomes are more probable)
+	- Using an axiomatic approach to probability allow us to not be concerned with how probabilities are interpreted, but only as functions which satisfy the axioms
+- A collection of subsets of $S$ is a sigma algebra (or Borel field, $\mathcal{B}$)
+	- $\emptyset \in \mathcal{B}$
+	- If $A \in \mathcal{B}$, then $A^c \in \mathcal{B}$ ($\mathcal{B}$ is closed under complementation)
+	- If $A_1, A_2, \ldots \in \mathcal{B}$, then $\bigcup_{i=1}^{\infty}A_i \in \mathcal{B}$ ($\mathcal{B}$ is closed under countable unions)
+	- Example
+		- For finite or countable $S$, $\mathcal{B} = \{\text{ all subsets of } S \text{, including } S \text{ itself }\}$
+			- $\mathcal{B} = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1,2,3\}\}$
+		- $\mathcal{B} = \{[a, b], (a, b], (a, b), [a, b) \mid a, b \in \mathbb{R}\}$
+	- Many possible different sigma algebras with a sample space $S$, but only concerned with smallest one which contains all open sets in $S$
+- Axiom of Countable Additivity (if $A_1, A_2, \ldots \in \mathcal{B}$ are pairwise disjoint, then $P(\bigcup_{i=1}^{\infty}A_i) = \sum_{i=1}^{\infty}P(A_i)$) is not universally accepted by statisticians, instead they suggest the Axiom of Finite Additivity (if $A \in \mathcal{B}$ and $B \in \mathcal{B}$ are disjoint, then $P(A \cup B) = P(A) + P(B)$)
+	- While assuming only finite additivity is simpler / more plausible, can lead to unexpected complications in statistical theory
+- Bonferroni's Inequality
+	- $P(A \cap B) \geq P(A) + P(B) - 1$
+	- Allows us to bound probability of simultaneous event (intersection) in terms of the probabilities of the individual events
+	- Potentially used when difficult to calculate intersection probability
+- Boole's Inequality
+	- $P(\bigcup_{i=1}^{\infty}A_i) \leq \sum_{i=1}^{\infty}P(A_i)$ for any sets $A_1,A_2,\ldots$
+	- Can be used to derive the generalized version of Bonferroni's Inequality
+		- $$\begin{align}P(\bigcup_{i=1}^{n}A_i^c) &\leq \sum_{i=1}^{n}P(A_i^c) \\ 1 - P(\bigcap_{i=1}^{n}A_i &\leq n - \sum_{i=1}^{n}P(A_i) \\ P(\bigcap_{i=1}^{n}A_i) &\geq \sum_{i=1}^{n}P(A_i) - (n - 1)\end{align}$$
+- Counting techniques are usually used to assign probability on finite sample spaces 
+- Exercises
+	- 1.1
+		- (a)
+			- $\{(s_1, s_2, s_3, s_4) \mid \text{where } s_i \in \{H,T\}\}$
+			- 

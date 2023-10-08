@@ -1,0 +1,52 @@
+#booknote 
+# Chapter 1
+- The sample space $\Omega$ is the set of all possible outcomes of an experiment
+	- $\omega$ are elements of $\Omega$ and subsets of $\Omega$ are events
+- A partition of $\Omega$ is a sequence of disjoint sets $A_1, A_2, \ldots$ such that $\bigcup_{i=1}^{\infty}A_i=\Omega$
+	- Given an event $A$, the indicator function of A is $$I_A(\omega)=I(\omega \in A)=\begin{cases}1&\text{if $\omega \in A$}\\0&\text{if $\omega \notin A$}\end{cases}$$
+- $\mathbb{P}(A)$ is a real number, the probability of event $A$ happening
+	- $\mathbb{P}$ is also known as a probability distribution or probability measure
+		- Axiom 1: $\mathbb{P}(A) \geq 0$ for every $A$
+		- Axiom 2: $\mathbb{P}(\Omega) = 1$
+		- Axiom 3: If $A_1, A_2, \ldots$ are disjoint, $\mathbb{P}(\bigcup_{i=1}^{\infty}A_i)=\sum_{i=1}^{\infty}\mathbb{P}(A_i)$
+	- May not always be able to assign probabilities to every event if sample space is large, instead probabilities to a limited class of set called $\sigma$-field or $\sigma$-algebra (set of events, class $\mathcal{A}$)
+		- $\emptyset \in \mathcal{A}$
+		- if $A_1,A_2,\ldots \in \mathcal{A}$ then $\bigcup_{i=1}^{\infty}A_i \in \mathcal{A}$
+		- $A \in \mathcal{A}$ implies that $A^c \in \mathcal{A}$
+		- sets in $\mathcal{A}$ are measurable, $(\Omega, \mathcal{A})$ is a measurable space, if $\mathbb{P}$ is defined on $\mathcal{A}$, then $(\Omega, \mathcal{A}, \mathbb{P})$ is a probability space
+		- if $\Omega$ is the real line, then $\mathcal{A}$ is taken to be the smallest $\sigma$-field that contains all open subsets, the Borel $\sigma$-field
+	- 2 ways to interpret $\mathbb{P}(A)$
+		- Frequentist interpretation: $\mathbb{P}(A)$ is the long run proportion of times that $A$ is true in repetitions
+		- Bayesian interpretation: $\mathbb{P}(A)$ is a measure of an observer's strength of belief that $A$ is true
+- For finite sample spaces, $\mathbb{P}(A)=\frac{\lvert A \rvert}{\lvert \Omega \rvert}$
+- If $\mathbb{P}(B) > 0$, then $\mathbb{P}(A|B)=\frac{\mathbb{P}(AB)}{\mathbb{P}(B)}$
+	- If $A$ and $B$ are independent events, then $\mathbb{P}(A|B)=\mathbb{P}(A)$
+	- $\mathbb{P}(AB)=\mathbb{P}(A|B)\mathbb{P}(B)=\mathbb{P}(B|A)\mathbb{P}(A)$
+- Bayes Theorem
+	- Law of Total Probability: let $A_1,A_2,\ldots$ be a partition of $\Omega$, then for any event $B$, $$\mathbb{P}(B)=\sum_{i=1}^{k}\mathbb{P}(B|A_i)\mathbb{P}(A_i)$$
+	- Bayes Theorem: let $A_1,A_2,\ldots$ be a partition of $\Omega$ such that $\mathbb{P}(A_i)>0$ for each $i$, if $\mathbb{P}(B)>0$, then $$\mathbb{P}(A_i|B)=\frac{\mathbb{P}(B|A_i)\mathbb{P}(A_i)}{\sum_{j}\mathbb{P}(B|A_j)\mathbb{P}(A_j)}$$
+	- Prior probability of $A$: $\mathbb{P}(A_i)$
+		- Probability distribution of $A_i$ before any observation or evidence is taken into account
+	- Posterior probability of $A$: $\mathbb{P}(A_i|B)$
+		- Probability distribution of $A_i$ from updating the prior probability with information summarized by the likelihood ($\mathbb{P}(B|A_i)$), the probability of observing $B$ given $A_i$
+- Intuition
+	- When looking at unions or differences of disjoint events, $\mathbb{P}$ is additive and subtractive over them (Axiom 3)
+	- 
+- Exercises
+	- 1.
+		- For any $B_i$ and $B_j$, where $i < j$, if $\omega \in B_i$ then it implies that $\omega \in A_i$ and $\omega \notin B_j$ (by definition of $B_j$). If $\omega \in B_j$, then it implies that $\omega \notin A_k$, for all $k < j$, hence $\omega \notin A_i$, since $i < j$. Hence, $B_1,B_2,\ldots$ are disjoint.
+		- $$\begin{align}A_n &= \bigcup_{i=1}^{n}A_i\\&=(A_n \cap A_{n-1}^c)\cup A_{n-1}&&\text{$A_n$ is monotone increasing}\\ &=(A_n \cap A_{n-1}^c)\cup(A_{n-1} \cap A_{n-2}^c)\cup \cdots \cup A_1\\&=(A_n \cap (A_{n-1}\cup \cdots \cup A_1)^c)\cup(A_{n-1}\cap(A_{n-2}\cup \cdots \cup A_1)^c)\cup \cdots \cup A_1\\&=B_n\cup B_{n-1}\cup \cdots \cup B_1\\&=\bigcup_{i=1}^nB_i\end{align}$$
+		- $$\begin{align}\bigcup_{i=1}^{\infty}B_i&=B_1\cup B_2 \cup B_3 \cdots\\&=A_1 \cup (A_2 \cap A_1^c) \cup (A_3 \cap (A_2 \cup A_1)^c) \cup \cdots\\&=A_1 \cup A_2 \cup (A_3 \cap (A_2 \cup A_1)^c) \cup \cdots\\&=A_1 \cup A_2 \cup A_3 \cup \cdots \\&=\bigcup_{i=1}^{\infty}A_i\end{align}$$
+		- Suppose that $A_n$ is monotone decreasing, so that $A_1 \supset A_2 \supset \cdots$. Let $A=lim_{n \rightarrow \infty}A_n=\bigcap_{i=1}^{\infty}A_i$. Define 
+	- 2.
+		- $$\begin{align}\mathbb{P}(\Omega) &= \mathbb{P}(\Omega \cup \emptyset) \\ &= \mathbb{P}(\Omega) + \mathbb{P}(\emptyset) && \text{by Axiom 3} \\ 1 &= 1 + \mathbb{P}(\emptyset) && \text{by Axiom 2} \\ \mathbb{P}(\emptyset) &= 0\end{align}$$
+		- 
+	- 3
+		- a)
+	- 4.
+	- 5. $S=\{\}$
+	- 17.$$\begin{align}\mathbb{P}(ABC) &= \mathbb{P}(A|BC)\mathbb{P}(BC)\\&=\mathbb{P}(A|BC)\mathbb{P}(B|C)\mathbb{P}(C)\end{align}$$
+	- 18. 
+# Chapter 2
+- A random variable is a mapping or function that maps each element $\omega$ in $\Omega$ to a real number, $X(\omega)$$$X:\Omega\rightarrow\mathbb{R}$$
+- 
