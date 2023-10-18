@@ -75,3 +75,5 @@
 	- 
 # Operations
 # LeetCode Problems
+- [[Two Sum]]
+- [[Ransom Note]]

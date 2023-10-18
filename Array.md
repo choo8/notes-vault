@@ -1,5 +1,4 @@
 # Implementation
-
 - Python
 	- CPython Implementation - https://github.com/python/cpython/blob/main/Include/cpython/listobject.h
 	```C
@@ -72,3 +71,8 @@
 - [[Valid Anagram]]
 - [[Valid Palindrome]]
 - [[Longest Substring Without Repeating Characters]]
+- [[Longest Repeating Character Replacement]]
+- [[Find All Anagrams in a String]]
+- [[Minimum Window Substring]]
+- [[Group Anagrams]]
+- [[Longest Palindromic Substring]]

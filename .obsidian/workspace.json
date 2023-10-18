@@ -8,36 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a1cda4a180ab1d8c",
+            "id": "ff5f597fd6d98ee4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Crafting Interpreters.md",
+                "file": "Best Time to Buy and Sell Stock.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "403f2ff51bbe66e8",
+            "id": "c0fe9b92ffe26cda",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Array.md",
+                "file": "Hash Tables.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d737ee90ae918c72",
+            "id": "2e637654945c2013",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "All of Statistics by Larry Wasserman.md",
+                "file": "Ransom Note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1258e7ed8946e939",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Minimum Window Substring.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Crafting Interpreters.md",
+                "file": "Ransom Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Crafting Interpreters.md",
+                "file": "Ransom Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Crafting Interpreters.md"
+                "file": "Ransom Note.md"
               }
             }
           },
@@ -168,8 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,34 +192,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b87dc20b36ea5ee8",
+  "active": "2e637654945c2013",
   "lastOpenFiles": [
-    "Understanding Analysis by Stephen Abott.md",
-    "Untitled",
-    "Longest Substring Without Repeating Characters.md",
-    "Untitled.canvas",
-    "Array.md",
     "Hash Tables.md",
-    "Lexical Analysis.md",
+    "Ransom Note.md",
+    "Longest Palindromic Substring.md",
+    "Best Time to Buy and Sell Stock.md",
+    "Array.md",
+    "Minimum Window Substring.md",
+    "Understanding Analysis by Stephen Abott.md",
+    "Monotonic Queue.md",
+    "Longest Substring Without Repeating Characters.md",
+    "Maximum Product Subarray.md",
     "Valid Palindrome.md",
+    "Group Anagrams.md",
+    "Find All Anagrams in a String.md",
+    "Longest Repeating Character Replacement.md",
     "Valid Anagram.md",
-    "All of Statistics by Larry Wasserman.md",
-    "Container With Most Water.md",
     "Statistical Inference by George Casella and Roger L. Berger.md",
+    "Ternary Operators.md",
     "Sliding Window Maximum.md",
+    "Search in Rotated Sorted Array.md",
+    "Crafting Interpreters.md",
+    "All of Statistics by Larry Wasserman.md",
+    "Untitled",
+    "Untitled.canvas",
+    "Lexical Analysis.md",
+    "Container With Most Water.md",
     "Pricing Money (A Beginner's Guide to Money, Bonds, Futures and Swaps) by Julian A. Wiseman.md",
     "Maximum Subarray.md",
-    "3Sum.md",
-    "Monotonic Queue.md",
-    "Crafting Interpreters.md",
-    "Compiler-Compiler.md",
-    "Best Time to Buy and Sell Stock.md",
-    "Cache Locality.md",
-    "Curry-Howard Isomorphism.md",
-    "Two Sum.md",
-    "Search in Rotated Sorted Array.md",
-    "Product of Array Except Self.md",
-    "Object Oriented Programming.md",
-    "Contains Duplicate.md"
+    "3Sum.md"
   ]
 }

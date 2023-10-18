@@ -225,11 +225,28 @@
 					- This implies that if $b$ is some other lower bound for $A$, then $l \geq b$
 	- 1.3.2
 		- a)
+			- $B = \{0\}$. $\text{inf }B = \text{sup }B = 0$
 		- b)
-			- $[0,1)$
+			- Impossible
 		- c)
+			- $B = \{x \in \mathbb{Q} : 1 \leq x^2 < 2\}$. $\text{inf } B = 1$, $\text{sup } B = \sqrt{2}$
 	- 1.3.3
-		- 
+		- a)
+			- Consider the case where $\text{sup } B < \text{inf }A$
+				- This implies that $\text{sup }B$ is a lower bound of $A$ that is smaller than $\text{inf }A$
+				- However, this contradicts the fact that $\text{sup }B$ has to be greater or equal to all $b \in B$, where $b$ is a lower bound of $A$
+			- Consider the case where $\text{sup }B > \text{inf }A$
+				- This implies that $\text{sup }B$ is not a lower bound of $A$, since if it is then it has to be equal to $\text{inf }A$, and there exists some $a \in A$ such that $a < \text{sup }B$
+				- However, this contradicts the fact that $\text{sup }B$ is the least upper bound of $B$ since $a$ is an upper bound of $B$ that is smaller than $\text{sup }B$, since $b \leq a$ for all $b \in B$
+			- Hence, $\text{sup } B = \text{inf } A$
+		- b)
+			- From our answer in part a), we were able to show with Axiom of Completeness, that a nonempty set $A$ that is bounded below, has a infimum, hence there is no need to assert the existence of a infimum via a separate axiom
+	- 1.3.4
+		- a)
+			- $\text{sup }(A_1 \cup A_2) = max(\text{sup }A_1, \text{sup }A_2)$
+			- $\text{sup }(\bigcup_{k=1}^{n}A_k) = max(\text{sup }A_1, \text{sup }A_2, \ldots, \text{sup }A_n)$
+		- b)
+			- 
 # Chapter 2
 - Operations like $+, -$ and $=$, which are well defined on finite sums may or may not be valid for infinite sums
 	- Similar considerations as operations on finite and infinite sets
@@ -244,4 +261,42 @@
 	- A sequence $(a_n)$ converges to $a$ if, given any $\epsilon$-neighborhood $V_{\epsilon}(a)$ of $a$, there exists a point in the sequence after which all of the terms are in $V_{\epsilon}(a)$
 		- Every $\epsilon$-neighborhood contains all but a finite number of the terms of $(a_n)$
 		- The smaller $V_{\epsilon}(a)$ is, the larger $N$ has to be
+	- The limit of a sequence, when it exists, must be unique
+- Divergence
+	- To prove that a sequence does not have a limit, show that there exists some $\epsilon$ for which no $n \in \mathbb{N}$ results in $\lvert a_n - a \rvert \leq \epsilon$
+- 
 - Exercises
+	- 2.2.1
+		- A sequence $(x_n)$ verconges to $x$ if there exists an $\epsilon > 0$ such that for all $N \in \mathbb{N}$ it is true that $n \geq N$ implies $\lvert x_n - x \rvert < \epsilon$
+		- $(1,-\frac{1}{2}, \frac{1}{3}, -\frac{1}{4}, \frac{1}{5}, -\frac{1}{5}, \frac{1}{5}, -\frac{1}{5}, \ldots)$
+			- Sequence verconges to 0. If we choose $\epsilon = 2$, for all $N \in \mathbb{N}$, $\lvert x_n - 0 \rvert < 2$
+		- Yes, we can always choose another $\epsilon$ value that is large enough to ensure that the series verconges to another value
+		- A vercongent sequence is actually a bounded sequence, as we are always able to select a large enough value for $\epsilon$ to bound $\lvert x_n - x \rvert$. However, if the sequence is unbounded, there will always be a $x_n$ such that $\lvert x_n - x \rvert \geq \epsilon$ for any value of $\epsilon$ chosen
+	- 2.2.2
+		- a)
+			- $\text{lim }\frac{2n + 1}{5n + 4} = \frac{2}{5}$
+			- For an arbitrary positive real number $\epsilon > 0$, choose $N \in \mathbb{N}$ with $N > -\frac{20}{25} - \frac{3}{25\epsilon}$. Let $n \in \mathbb{N}$ satisfy $n \geq N$, hence $n > -\frac{20}{25} - \frac{3}{25\epsilon}$
+			- $$\begin{align} n &> -\frac{20}{25} - \frac{3}{25\epsilon} \\ 25n &> -20 - \frac{3}{\epsilon} \\ 25n + 20 &> -\frac{3}{\epsilon} \\ -\frac{3}{25n + 20} &< \epsilon \\ \frac{10n + 5 - 10n -8}{25n + 20} &< \epsilon \\ \frac{5(2n + 1) - 2(5n + 4)}{5(5n + 4)} &< \epsilon \\ \frac{2n+1}{5n+4} - \frac{2}{5} &< \epsilon \\ \left\lvert \frac{2n+1}{5n+4} - \frac{2}{5} \right\rvert &< \epsilon \end{align}$$
+		- b)
+			- $\text{lim }\frac{2n^2}{n^3 + 3} = 0$
+			- For an arbitrary positive real number $\epsilon > 0$, choose $N \in \mathbb{N}$ with $N > \frac{2}{\epsilon}$. Let $n \in \mathbb{N}$ satisfy $n \geq N$, hence $n > \frac{2}{\epsilon}$
+			- $$\begin{align} n &> \frac{2}{\epsilon} \\ \frac{2}{n} &< \epsilon \\ \frac{2n^2}{n^3} &< \epsilon \\ \frac{2n^2}{n^3 + 3} &< \epsilon \\ \left\lvert \frac{2n^2}{n^3 + 3} - 0 \right\rvert &< \epsilon \end{align}$$
+		- c)
+			- $\text{lim }\frac{sin(n^2)}{\sqrt[3]{n}} = 0$
+			- For an arbitrary positive real number $\epsilon > 0$, choose $N \in \mathbb{N}$ with $\sqrt[3]{N} > \frac{1}{\epsilon}$. Let $n \in \mathbb{N}$ satisfy $n \geq N$, hence $\sqrt[3]{n} > \frac{1}{\epsilon}$
+			- $$\begin{align} \sqrt[3]{n} &< \frac{1}{\epsilon} \\ \frac{1}{\sqrt[3]{n}} &< \epsilon \\ \frac{sin(n^2)}{\sqrt[3]{n}} &< \epsilon && \lvert sin(x) \rvert < 1 \\ \left\lvert \frac{sin(n^2)}{\sqrt[3]{n}} - 0 \right\rvert &< \epsilon \end{align}$$
+	- 2.2.3
+		- a)
+			- Show that there exists a college in the United States where every student is below seven feet tall
+		- b)
+			- Show that there exists a college in the United States where every professor gives at least one student a grade lower than B
+		- c)
+			- Show that at every college in the United State, every student is below six feet tall
+	- 2.2.4
+		- a)
+	- 2.2.5
+		- a)
+			- $\text{lim }[[\frac{5}{n}]] = 0$
+		- b)
+			- $\text{lim }[[\frac{12 + 4n}{3n}]] = 1$
+	- 
