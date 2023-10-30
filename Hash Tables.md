@@ -77,3 +77,7 @@
 # LeetCode Problems
 - [[Two Sum]]
 - [[Ransom Note]]
+- [[Insert Delete GetRandom O(1)]]
+- [[First Missing Positive]]
+- [[LRU Cache]]
+- [[All O`one Data Structure]]

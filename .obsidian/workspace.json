@@ -4,59 +4,95 @@
     "type": "split",
     "children": [
       {
-        "id": "771f39b60421e934",
+        "id": "47797105c235a125",
         "type": "tabs",
         "children": [
           {
-            "id": "ff5f597fd6d98ee4",
+            "id": "3be934dd8c932e89",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Best Time to Buy and Sell Stock.md",
+                "file": "Recursion.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c0fe9b92ffe26cda",
+            "id": "a2ca542f90c295ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hash Tables.md",
+                "file": "Sudoku Solver.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2e637654945c2013",
+            "id": "5011da64d5133f1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ransom Note.md",
+                "file": "Search.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1258e7ed8946e939",
+            "id": "f16a8237aecf4c72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Minimum Window Substring.md",
+                "file": "Search a 2D Matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21b9e327a3e0495d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kth Smallest Element in a Sorted Matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff70ccf4291dfabe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Binary Search.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5beee8b81e7007e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Analysis I by Tao.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -122,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ransom Note.md",
+                "file": "Analysis I by Tao.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ransom Note.md",
+                "file": "Analysis I by Tao.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ransom Note.md"
+                "file": "Analysis I by Tao.md"
               }
             }
           },
@@ -192,35 +228,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e637654945c2013",
+  "active": "e5beee8b81e7007e",
   "lastOpenFiles": [
+    "Binary Search.md",
+    "Search a 2D Matrix.md",
+    "Search.md",
+    "Analysis I by Tao.md",
+    "Kth Smallest Element in a Sorted Matrix.md",
+    "Search in Rotated Sorted Array.md",
+    "Recursion.md",
+    "Sudoku Solver.md",
+    "Permutations.md",
+    "Subsets II.md",
+    "Letter Combinations of a Phone Number.md",
+    "Subsets.md",
+    "Combinations.md",
+    "Generate Parentheses.md",
+    "All O`one Data Structure.md",
+    "Array.md",
+    "Best Time to Buy and Sell Stock.md",
+    "LRU Cache.md",
     "Hash Tables.md",
+    "First Missing Positive.md",
+    "Insert Delete GetRandom O(1).md",
     "Ransom Note.md",
     "Longest Palindromic Substring.md",
-    "Best Time to Buy and Sell Stock.md",
-    "Array.md",
     "Minimum Window Substring.md",
     "Understanding Analysis by Stephen Abott.md",
     "Monotonic Queue.md",
-    "Longest Substring Without Repeating Characters.md",
-    "Maximum Product Subarray.md",
-    "Valid Palindrome.md",
-    "Group Anagrams.md",
-    "Find All Anagrams in a String.md",
-    "Longest Repeating Character Replacement.md",
-    "Valid Anagram.md",
-    "Statistical Inference by George Casella and Roger L. Berger.md",
-    "Ternary Operators.md",
-    "Sliding Window Maximum.md",
-    "Search in Rotated Sorted Array.md",
-    "Crafting Interpreters.md",
-    "All of Statistics by Larry Wasserman.md",
     "Untitled",
-    "Untitled.canvas",
-    "Lexical Analysis.md",
-    "Container With Most Water.md",
-    "Pricing Money (A Beginner's Guide to Money, Bonds, Futures and Swaps) by Julian A. Wiseman.md",
-    "Maximum Subarray.md",
-    "3Sum.md"
+    "Untitled.canvas"
   ]
 }
