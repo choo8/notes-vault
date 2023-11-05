@@ -20,60 +20,12 @@
             }
           },
           {
-            "id": "a2ca542f90c295ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sudoku Solver.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "5011da64d5133f1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Search.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f16a8237aecf4c72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Search a 2D Matrix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "21b9e327a3e0495d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kth Smallest Element in a Sorted Matrix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ff70ccf4291dfabe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Binary Search.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,9 +42,65 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6efb1838b2f10a33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Matrix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1f8b8d666cffcbc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Valid Sudoko.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "792303ed4642d41e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "96c52eed051309de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linked List.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce50e8335692cf1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Linked List.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -158,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Analysis I by Tao.md",
+                "file": "Reverse Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Analysis I by Tao.md",
+                "file": "Reverse Linked List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Analysis I by Tao.md"
+                "file": "Reverse Linked List.md"
               }
             }
           },
@@ -228,16 +236,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e5beee8b81e7007e",
+  "active": "ce50e8335692cf1e",
   "lastOpenFiles": [
-    "Binary Search.md",
-    "Search a 2D Matrix.md",
+    "Linked List.md",
+    "Reverse Linked List.md",
+    "Matrix.md",
+    "Valid Sudoko.md",
     "Search.md",
-    "Analysis I by Tao.md",
-    "Kth Smallest Element in a Sorted Matrix.md",
-    "Search in Rotated Sorted Array.md",
+    "Median of Two Sorted Arrays.md",
+    "Rotate Image.md",
     "Recursion.md",
     "Sudoku Solver.md",
+    "Find Minimum in Rotated Sorted Array.md",
+    "Analysis I by Tao.md",
+    "Spiral Matrix.md",
+    "Set Matrix Zeroes.md",
+    "Kth Largest Element in an Array.md",
+    "Binary Search.md",
+    "Search a 2D Matrix.md",
+    "Kth Smallest Element in a Sorted Matrix.md",
+    "Search in Rotated Sorted Array.md",
     "Permutations.md",
     "Subsets II.md",
     "Letter Combinations of a Phone Number.md",
@@ -246,16 +264,6 @@
     "Generate Parentheses.md",
     "All O`one Data Structure.md",
     "Array.md",
-    "Best Time to Buy and Sell Stock.md",
-    "LRU Cache.md",
-    "Hash Tables.md",
-    "First Missing Positive.md",
-    "Insert Delete GetRandom O(1).md",
-    "Ransom Note.md",
-    "Longest Palindromic Substring.md",
-    "Minimum Window Substring.md",
-    "Understanding Analysis by Stephen Abott.md",
-    "Monotonic Queue.md",
     "Untitled",
     "Untitled.canvas"
   ]
