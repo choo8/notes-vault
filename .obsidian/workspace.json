@@ -44,30 +44,6 @@
             }
           },
           {
-            "id": "fe779d272ecedae7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Largest Rectangle in Histogram.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97bc89fc5e24abc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Trapping Rain Water.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "772ae1f2ed1b96be",
             "type": "leaf",
             "state": {
@@ -90,9 +66,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "de30c6cb66875cca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lowest Common Ancestor of a Binary Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f57ca7f2ad2338a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Binary Tree Maximum Path Sum.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Non-overlapping Intervals.md",
+                "file": "Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Non-overlapping Intervals.md",
+                "file": "Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Non-overlapping Intervals.md"
+                "file": "Tree.md"
               }
             }
           },
@@ -228,11 +228,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "772ae1f2ed1b96be",
+  "active": "2d2a7c586a85c621",
   "lastOpenFiles": [
+    "Binary Tree Right Side View.md",
     "Tree.md",
-    "Maximum Depth of Binary Tree.md",
+    "Stack.md",
+    "Largest Rectangle in Histogram.md",
+    "Lowest Common Ancestor of a Binary Tree.md",
+    "Binary Tree Level Order Traversal.md",
+    "Trapping Rain Water.md",
     "Non-overlapping Intervals.md",
+    "Binary Tree Maximum Path Sum.md",
+    "Same Tree.md",
+    "Lowest Common Ancestor of a Binary Search Tree.md",
+    "Invert Binary Tree.md",
+    "Maximum Depth of Binary Tree.md",
     "Analysis I by Tao.md",
     "Recursion.md",
     "Search.md",
@@ -240,22 +250,12 @@
     "Understanding Analysis by Stephen Abott.md",
     "Queue.md",
     "Design Circular Queue.md",
-    "Trapping Rain Water.md",
-    "Largest Rectangle in Histogram.md",
-    "Stack.md",
     "Insert Intervals.md",
     "Interval.md",
     "Merge Intervals.md",
     "Daily Temperatures.md",
     "Basic Calculator II.md",
     "Basic Calculator.md",
-    "Evaluate Reverse Polish Notation.md",
-    "Asteroid Collision.md",
-    "Min Stack.md",
-    "Monotonic Queue.md",
-    "Valid Parentheses.md",
-    "Implement Queues using Stacks.md",
-    "Valid Sudoko.md",
     "Untitled",
     "Untitled.canvas"
   ]
