@@ -7,3 +7,8 @@
 - [[Binary Tree Level Order Traversal]]
 - [[Lowest Common Ancestor of a Binary Tree]]
 - [[Binary Tree Right Side View]]
+- [[Subtree of Another Tree]]
+- [[Construct Binary Tree from Preorder and Inorder Traversal]]
+- [[Serialize and Deserialize Binary Tree]]
+- [[Validate Binary Search Tree]]
+- [[Kth Smallest Element in a BST]]
