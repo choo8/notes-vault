@@ -1,3 +1,8 @@
+# Algorithms
+- Breadth First Search
+- Depth First Search
+- Topological Sort
+	- 
 # LeetCode Problems
 - [[Number of Islands]]
 - [[Flood Fill]]
