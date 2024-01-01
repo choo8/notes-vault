@@ -76,3 +76,4 @@
 - [[Minimum Window Substring]]
 - [[Group Anagrams]]
 - [[Longest Palindromic Substring]]
+- [[Majority Element]]

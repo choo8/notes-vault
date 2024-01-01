@@ -1,0 +1,69 @@
+# Chapter 2
+- Inputs may also be known as predictors, independent variables, features or variables
+- Output variable may also be known as the response or dependent variable
+- We assume that there is some relationship between $Y$ and $X = (X_1, X_2, \ldots, X_p)$ in the general form of $Y = f(X) + \epsilon$
+	- $\epsilon$ is the error term which is independent of $X$ and has mean zero
+	- $f$ represents systematic information that $X$ provides about $Y$
+	- Statistical learning refers to a set of approaches for estimating $f$
+- Reasons for estimating $f$
+	- Prediction
+		- When $X$ is available but $Y$ cannot be easily obtained, hence predict $Y$ via $\hat{Y} = \hat{f}(X)$
+			- $\epsilon$ averages to 0
+		- Accuracy of $\hat{Y}$ as a prediction for $Y$ depends on
+			- Reducible error
+				- Can always improve $\hat{f}$ to further reduce reducible error
+			- Irreducible error
+				- $Y$ is a function of $\epsilon$, hence cannot be predicted perfectly with $X$ alone
+				- Variability due to $\epsilon$ causes this irreducible error
+				- Cannot reduce irreducible error regardless of how well we estimate $f$
+				- May contain unmeasured variables useful in the prediction of $Y$ or unmeasurable variations
+			- $$\begin{align}E(Y - \hat{Y})^2 &= E[f(X) + \epsilon - \hat{f}(X)]^2 \\ &= [f(X) - \hat{f}(X)]^2 + Var(\epsilon)\end{align}$$
+				- Reducible and irreducible components of the expected squared difference between predicted and actual value of $Y$
+	- Inference
+		- Estimate $f$ to understand the relationship between $X$ and $Y$, to answer questions like
+			- Which predictors are associated with the response?
+				- Useful to identify the important predictors
+			- What is the relationship between the response and each predictor?
+			- Can the relationship between $Y$ and each predictor be adequately summarized using a linear equation, or is the relationship more complicated?
+- Linear models allow for more interpretable inference, but may not yield as accurate predictions as other approaches, and vice versa for some highly non-linear models
+	- Generally, there is a trade-off between prediction accuracy and model interpretability
+	- Model choices can be influenced by the goal of the analysis (e.g. prediction vs inference)
+- Methods to estimate $f$
+	- Parametric
+		- Assume a functional form of $f$ (e.g. $f(X) = \beta_0 + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_pX_p$)
+		- Fit training data to chosen model via estimating the parameters (e.g. $\beta_1, \beta_2, \ldots, \beta_p$)
+		- More flexible models can give a more accurate fitting with more training data points but may also cause overfitting
+	- Non-parametric
+		- No explicit assumptions of functional form of $f$
+		- Typically require large amounts of training data points to obtain accurate estimate of $f$
+- Supervised vs unsupervised learning
+	- Supervised - data points are labeled, prediction and inference tasks are possible
+	- Unsupervised - data points are unlabeled, cluster analysis to group observations is possible
+	- Semi-supervised - a subset of data points are labeled
+- Regression vs classification problems
+	- Variables can be quantitative (i.e. numerical values) or qualitative (i.e. categories)
+	- Problems with quantitative response variables are typically regression problems while those with qualitative response variables are typically classification problems
+		- Not so clear cut - logistic regression used for classification problems
+	- Statistical learning methods to use depends on the type of response variables, more so than the type of predictors
+- Measuring fit
+	- First fit statistical learning method to training observations to obtain $\hat{f}$, then check errors on test observations
+		- If no test observations, then may need to check errors on training observations, but will not guaranteed lowest errors on observations outside of training set
+	- Regression - mean squared error (MSE $= \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{f}(x_i))^2$) is commonly used
+- Bias-Variance trade-off
+	- $E(y_0 - \hat{f}(x_0))^2 = Var(\hat{f}(x_0)) + [Bias(\hat{f}(x_0))]^2 + Var(\epsilon)$
+	- To minimize expected test error, need to have low variance and low bias
+		- Variance - changes in $\hat{f}$ when estimated with different training sets
+			- Typically more flexible statistical methods have higher variance
+		- Bias - error introduced by approximating problem with a simpler model
+			- Typically more flexible statistical methods have lower bias, perhaps more fitting to the actual generating process of the observations
+	- Also applies for classification problems, with the error being $\frac{1}{n}\sum_{i=1}^{n}I(y_i \neq \hat{y}_i)$, where $I(y_i \neq \hat{y}_i)$ is an indicator variable that equals 1 if $y_i \neq \hat{y}_i$ and 0 otherwise
+- Bayes classifier
+	- Can be shown that test error is minimized if test observation is label with $j$ where $Pr(Y = j \mid X = x_0)$ is the largest
+	- Overall error will be $1 - (E(\underset{j}{max} Pr(Y = j \mid X)))$
+- K-nearest neighbors (KNN)
+	- Not easy to obtain conditional distribution of $Y$ given $X$, most approaches estimate it then classify observation
+	- KNN looks at k nearest observations to given observation, and estimates the conditional probability for class $j$ as $Pr(Y = j \mid X = x_0) = \frac{1}{K}\sum_{i \in \mathcal{N}_0} I(y_i = j)$
+	- Often very close to that of Bayes classifier
+	- As K grows, decision boundary becomes increasingly close to that of a linear classifier
+- Lab
+- Exercises

@@ -12,3 +12,5 @@
 - [[Serialize and Deserialize Binary Tree]]
 - [[Validate Binary Search Tree]]
 - [[Kth Smallest Element in a BST]]
+- [[Balanced Binary Tree]]
+- [[Diameter of Binary Tree]]
