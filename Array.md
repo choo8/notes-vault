@@ -77,3 +77,6 @@
 - [[Group Anagrams]]
 - [[Longest Palindromic Substring]]
 - [[Majority Element]]
+- [[Roman to Integer]]
+- [[Backspace String Compare]]
+- [[Longest Common Prefix]]
