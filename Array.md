@@ -80,3 +80,7 @@
 - [[Roman to Integer]]
 - [[Backspace String Compare]]
 - [[Longest Common Prefix]]
+- [[Move Zeroes]]
+- [[Squares of Sorted Array]]
+- [[Sort Colors]]
+- [[String to Integer (atoi)]]

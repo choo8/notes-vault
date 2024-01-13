@@ -14,3 +14,5 @@
 - [[Kth Smallest Element in a BST]]
 - [[Balanced Binary Tree]]
 - [[Diameter of Binary Tree]]
+- [[Symmetric Tree]]
+- [[Convert Sorted Array to Binary Search Tree]]
