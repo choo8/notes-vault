@@ -8,43 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e5beee8b81e7007e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Backspace String Compare.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "52a91c55ff1f0a69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hash Tables.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76bc64d65636f78b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Matrix.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e605c20328ccf688",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Array.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df4fba1fa23f2e08",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,19 +32,19 @@
             }
           },
           {
-            "id": "df06b64957d08d04",
+            "id": "eb85bc512b58174c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Minimum Height Trees.md",
+                "file": "Course Schedule II.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Minimum Height Trees.md",
+                "file": "Course Schedule II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Minimum Height Trees.md",
+                "file": "Course Schedule II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Minimum Height Trees.md"
+                "file": "Course Schedule II.md"
               }
             }
           },
@@ -206,34 +182,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df06b64957d08d04",
+  "active": "eb85bc512b58174c",
   "lastOpenFiles": [
     "Graph.md",
-    "Tree.md",
-    "Minimum Height Trees.md",
-    "Disjoint-Set.md",
+    "Course Schedule II.md",
+    "Trie.md",
+    "Top K Frequent Words.md",
+    "Heap.md",
+    "Next Permutation.md",
+    "Top K Frequent Elements.md",
+    "Find Duplicate Number.md",
     "Array.md",
+    "Backspace String Compare.md",
+    "Hash Tables.md",
+    "Binary.md",
+    "Gas Station.md",
+    "Task Scheduler.md",
+    "Minimum Height Trees.md",
+    "Tree.md",
+    "Disjoint-Set.md",
     "Word Search.md",
     "String to Integer (atoi).md",
     "Sort Colors.md",
     "Accounts Merge.md",
     "Matrix.md",
     "Valid Sudoku.md",
-    "Hash Tables.md",
     "Time Based Key-Value Store.md",
     "Ternary Operators.md",
     "Symmetric Tree.md",
-    "Sudoku Solver.md",
-    "Sum of Two Integers.md",
-    "Subsets.md",
-    "Subsets II.md",
-    "Stack.md",
-    "Squares of Sorted Array.md",
-    "Spiral Matrix.md",
-    "Sliding Window Maximum.md",
-    "Single Number.md",
-    "Set Matrix Zeroes.md",
-    "Serialize and Deserialize Binary Tree.md",
     "Untitled",
     "Untitled.canvas"
   ]

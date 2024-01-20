@@ -84,3 +84,6 @@
 - [[Squares of Sorted Array]]
 - [[Sort Colors]]
 - [[String to Integer (atoi)]]
+- [[Gas Station]]
+- [[Next Permutation]]
+- [[Find Duplicate Number]]
