@@ -16,3 +16,5 @@
 - [[Diameter of Binary Tree]]
 - [[Symmetric Tree]]
 - [[Convert Sorted Array to Binary Search Tree]]
+- [[Path Sum II]]
+- [[Maximum Width of Binary Tree]]

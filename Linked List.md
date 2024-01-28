@@ -7,3 +7,5 @@
 - [[Reorder List]]
 - [[Middle of the Linked List]]
 - [[Palindrome Linked List]]
+- [[Swap Nodes in Pairs]]
+- [[Odd Even Linked List]]

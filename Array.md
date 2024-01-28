@@ -87,3 +87,6 @@
 - [[Gas Station]]
 - [[Next Permutation]]
 - [[Find Duplicate Number]]
+- [[Longest Consecutive Sequence]]
+- [[Rotate Array]]
+- [[Contiguous Array]]

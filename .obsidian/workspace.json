@@ -20,31 +20,43 @@
             }
           },
           {
-            "id": "df4fba1fa23f2e08",
+            "id": "1d200f5d2b10466c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph.md",
+                "file": "Linked List.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "eb85bc512b58174c",
+            "id": "65c4bc7ea2a5d94f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Course Schedule II.md",
+                "file": "Heap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d44faa79e07bcf17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Find K Closest Elements.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Course Schedule II.md",
+                "file": "Find K Closest Elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Course Schedule II.md",
+                "file": "Find K Closest Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Course Schedule II.md"
+                "file": "Find K Closest Elements.md"
               }
             }
           },
@@ -182,34 +194,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb85bc512b58174c",
+  "active": "d44faa79e07bcf17",
   "lastOpenFiles": [
+    "Linked List.md",
+    "Tree.md",
+    "Maximum Width of Binary Tree.md",
+    "Find K Closest Elements.md",
+    "Heap.md",
+    "Array.md",
+    "Contiguous Array.md",
+    "Stack.md",
+    "Decode String.md",
+    "Odd Even Linked List.md",
+    "Rotate Array.md",
+    "Longest Consecutive Sequence.md",
+    "Path Sum II.md",
+    "Binary Tree Level Order Traversal.md",
+    "Swap Nodes in Pairs.md",
     "Graph.md",
     "Course Schedule II.md",
     "Trie.md",
     "Top K Frequent Words.md",
-    "Heap.md",
     "Next Permutation.md",
     "Top K Frequent Elements.md",
     "Find Duplicate Number.md",
-    "Array.md",
     "Backspace String Compare.md",
     "Hash Tables.md",
     "Binary.md",
     "Gas Station.md",
-    "Task Scheduler.md",
-    "Minimum Height Trees.md",
-    "Tree.md",
-    "Disjoint-Set.md",
-    "Word Search.md",
-    "String to Integer (atoi).md",
-    "Sort Colors.md",
-    "Accounts Merge.md",
-    "Matrix.md",
-    "Valid Sudoku.md",
-    "Time Based Key-Value Store.md",
-    "Ternary Operators.md",
-    "Symmetric Tree.md",
     "Untitled",
     "Untitled.canvas"
   ]
