@@ -12,3 +12,6 @@
 - [[Unique Paths]]
 - [[Jump Game]]
 - [[Combination Sum]]
+- [[Maximum Profit in Job Scheduling]]
+- [[Regular Expression Matching]]
+- [[Wildcard Matching]]

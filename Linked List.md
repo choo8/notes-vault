@@ -9,3 +9,7 @@
 - [[Palindrome Linked List]]
 - [[Swap Nodes in Pairs]]
 - [[Odd Even Linked List]]
+- [[Add Two Numbers]]
+- [[Sort List]]
+- [[Rotate List]]
+- [[Reverse Nodes in k-Group]]

@@ -9,13 +9,13 @@ An input string is valid if:
 - $O(n)$ time complexity
 - $O(n)$ space complexity
 # Thought Process
+- For the bruteforce solution, 
 # Solution
 - adasd
 ```Python
 class Solution:
 	def isValid(self, s: str) -> bool:
-		stack = []
-		bracket_dict = {"(": ")", "{": "}", "[": "]"}
+		stack, bracket_dict = [], {"(": ")", "{": "}", "[": "]"}
 
 		for c in s:
 			if c in ["(", "{", "["]:

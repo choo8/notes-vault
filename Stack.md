@@ -10,3 +10,5 @@
 - [[Largest Rectangle in Histogram]]
 - [[Backspace String Compare]]
 - [[Decode String]]
+- [[Maximum Frequency Stack]]
+- [[Longest Valid Parentheses]]

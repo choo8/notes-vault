@@ -18,3 +18,6 @@
 - [[Convert Sorted Array to Binary Search Tree]]
 - [[Path Sum II]]
 - [[Maximum Width of Binary Tree]]
+- [[Binary Tree Zigzag Level Order Traversal]]
+- [[Path Sum III]]
+- [[All Nodes Distance K in Binary Tree]]

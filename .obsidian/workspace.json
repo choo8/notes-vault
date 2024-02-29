@@ -8,55 +8,67 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e605c20328ccf688",
+            "id": "3c750503ab8d2425",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Array.md",
+                "file": "Hash Tables.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1d200f5d2b10466c",
+            "id": "6fce16a55b341e65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linked List.md",
+                "file": "Palindrome Pairs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "65c4bc7ea2a5d94f",
+            "id": "f6b67a72c6d564ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Heap.md",
+                "file": "Dynamic Programming.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d44faa79e07bcf17",
+            "id": "fa94cd77311ec488",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Find K Closest Elements.md",
+                "file": "Papers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f0951d3b7958330",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Neural Machine Translation by Jointly Learning to Align and Translate.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 297.5
   },
   "right": {
     "id": "8400c48b3c40a2f0",
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Find K Closest Elements.md",
+                "file": "Dynamic Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Find K Closest Elements.md",
+                "file": "Dynamic Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Find K Closest Elements.md"
+                "file": "Dynamic Programming.md"
               }
             }
           },
@@ -194,34 +206,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d44faa79e07bcf17",
+  "active": "f6b67a72c6d564ec",
   "lastOpenFiles": [
-    "Linked List.md",
-    "Tree.md",
-    "Maximum Width of Binary Tree.md",
-    "Find K Closest Elements.md",
-    "Heap.md",
-    "Array.md",
-    "Contiguous Array.md",
-    "Stack.md",
-    "Decode String.md",
-    "Odd Even Linked List.md",
-    "Rotate Array.md",
-    "Longest Consecutive Sequence.md",
-    "Path Sum II.md",
-    "Binary Tree Level Order Traversal.md",
-    "Swap Nodes in Pairs.md",
-    "Graph.md",
-    "Course Schedule II.md",
-    "Trie.md",
-    "Top K Frequent Words.md",
-    "Next Permutation.md",
-    "Top K Frequent Elements.md",
-    "Find Duplicate Number.md",
-    "Backspace String Compare.md",
+    "Wildcard Matching.md",
+    "Dynamic Programming.md",
+    "Substring with Concatenation of All Words.md",
+    "Math.md",
+    "Divide Two Integers.md",
+    "Palindrome Pairs.md",
     "Hash Tables.md",
-    "Binary.md",
-    "Gas Station.md",
+    "Dive into Deep Learning by Zhang et al..md",
+    "Papers.md",
+    "Neural Machine Translation by Jointly Learning to Align and Translate.md",
+    "Valid Parentheses.md",
+    "Regular Expression Matching.md",
+    "Array.md",
+    "Zigzag Conversion.md",
+    "Two Sum.md",
+    "3Sum Closest.md",
+    "Heap.md",
+    "Smallest Range Covering Elements from K Lists.md",
+    "Linked List.md",
+    "Recursion.md",
+    "Sudoku Solver.md",
+    "N-Queens.md",
+    "Reverse Nodes in k-Group.md",
+    "Reverse Linked List.md",
+    "Trie.md",
+    "Graph.md",
     "Untitled",
     "Untitled.canvas"
   ]

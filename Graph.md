@@ -15,3 +15,7 @@
 - [[Word Search]]
 - [[Minimum Height Trees]]
 - [[Course Schedule II]]
+- [[Cheapest Flights Within K Stops]]
+- [[Word Ladder]]
+- [[Longest Increasing Path in a Matrix]]
+- [[Bus Routes]]

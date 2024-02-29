@@ -90,3 +90,8 @@
 - [[Longest Consecutive Sequence]]
 - [[Rotate Array]]
 - [[Contiguous Array]]
+- [[Subarray Sum Equals K]]
+- [[Random Pick with Weight]]
+- [[Largest Number]]
+- [[3Sum Closest]]
+- [[Zigzag Conversion]]

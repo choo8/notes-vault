@@ -6,3 +6,4 @@
 - [[Subsets II]]
 - [[Permutations]]
 - [[Sudoku Solver]]
+- [[N-Queens]]

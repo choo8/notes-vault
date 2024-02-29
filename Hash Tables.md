@@ -83,3 +83,5 @@
 - [[All O`one Data Structure]]
 - [[Longest Palindrome]]
 - [[Time Based Key-Value Store]]
+- [[Palindrome Pairs]]
+- [[Substring with Concatenation of All Words]]
