@@ -85,3 +85,5 @@
 - [[Time Based Key-Value Store]]
 - [[Palindrome Pairs]]
 - [[Substring with Concatenation of All Words]]
+- [[Dot Product of Two Sparse Vectors]]
+- [[Custom Sort String]]

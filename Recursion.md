@@ -7,3 +7,5 @@
 - [[Permutations]]
 - [[Sudoku Solver]]
 - [[N-Queens]]
+- [[N-Queens II]]
+- [[Restore IP Addresses]]

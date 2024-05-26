@@ -6,3 +6,4 @@
 - [[Reverse Bits]]
 - [[Single Number]]
 - [[Add Binary]]
+- [[Gray Code]]

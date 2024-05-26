@@ -12,3 +12,7 @@
 - [[Decode String]]
 - [[Maximum Frequency Stack]]
 - [[Longest Valid Parentheses]]
+- [[Simplify Path]]
+- [[Minimum Remove to Make Valid Parentheses]]
+- [[Buildings With an Ocean View]]
+- [[Minimum Add to Make Parentheses Valid]]

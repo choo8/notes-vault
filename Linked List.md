@@ -13,3 +13,7 @@
 - [[Sort List]]
 - [[Rotate List]]
 - [[Reverse Nodes in k-Group]]
+- [[Remove Duplicates from Sorted List II]]
+- [[Partition List]]
+- [[Reverse Linked List II]]
+- [[Insert into a Sorted Circular Linked List]]

@@ -8,3 +8,5 @@
 - [[Median of Two Sorted Arrays]]
 - [[First Bad Version]]
 - [[Find K Closest Elements]]
+- [[Search in Rotated Sorted Array II]]
+- [[Design Hit Counter]]
