@@ -16,3 +16,4 @@
 - [[Minimum Remove to Make Valid Parentheses]]
 - [[Buildings With an Ocean View]]
 - [[Minimum Add to Make Parentheses Valid]]
+- [[Exclusive Time of Functions]]

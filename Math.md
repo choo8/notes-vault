@@ -3,3 +3,4 @@
 - [[Pow(x, n)]]
 - [[Reverse Integer]]
 - [[Divide Two Integers]]
+- [[Maximum Swap]]

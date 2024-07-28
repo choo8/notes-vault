@@ -87,3 +87,5 @@
 - [[Substring with Concatenation of All Words]]
 - [[Dot Product of Two Sparse Vectors]]
 - [[Custom Sort String]]
+- [[Random Pick Index]]
+- [[Group Shifted Strings]]

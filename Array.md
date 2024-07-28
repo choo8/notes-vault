@@ -101,3 +101,5 @@
 - [[Encode and Decode Strings]]
 - [[Valid Word Abbreviation]]
 - [[Valid Palindrome II]]
+- [[Heaters]]
+- [[Minimum Increment to Make Array Unique]]

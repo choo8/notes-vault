@@ -4,3 +4,4 @@
 - [[Rotate Image]]
 - [[Valid Sudoku]]
 - [[Maximal Square]]
+- [[Diagonal Traverse]]

@@ -21,3 +21,6 @@
 - [[Scramble String]]
 - [[Interleaving String]]
 - [[Stickers to Spell Word]]
+- [[Valid Palindrome III]]
+- [[Optimal Account Balancing]]
+- [[Number of Ways of Cutting a Pizza]]

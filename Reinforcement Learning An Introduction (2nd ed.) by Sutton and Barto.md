@@ -1,0 +1,46 @@
+# Chapter 1
+- Reinforcement Learning
+	- Goal-directed learning from interactions
+	- Learning actions to situations to maximize a numerical reward signal in an uncertain environment
+- Reinforcement learning system
+	- Policy - mapping of perceived states of environment to actions
+	- Reward signal - stochastic function of state of environment and actions taken
+	- Value function - maps state to predicted total amount of reward agent can expect over the future, starting from that state (long-term desirability of states)
+	- Model of environment - allows inferences to be made about the environment, how it behaves
+		- Allows for planning, to decide actions to take (model-based)
+		- Explicit trial-and-error (model-free)
+- Evolutionary methods
+	- Multiple static policies interacting with separate instances of the environment, with the ones which managed to obtain the most rewards, and their variants, carried over to the next generation of policies
+		- If policy space is small, or time for search is large, it could be effective
+	- Does not exploit knowledge of states passed through or actions selected during runs, hence might result in less efficient search in policy space
+		- Value functions help make the search in policy space more efficient, distinguishing RL methods from evolutionary methods
+- Tic-Tac-Toe
+	- Perfect player can always play to never lose
+		- Cannot use minimax solution from Game Theory as we are assuming we are playing against imperfect player
+	- Classic algorithms for sequential decision problems (e.g. dynamic programming) requires complete specification of opponent to compute optimal solution, but this information may not be available a priori
+		- Could be estimated by playing against same opponent many times to learn model of opponent's behaviour before applying dynamic programming
+	- Evolutionary method - directly search policy space for policy with high probability of winning
+		- Each policy's winning probability would be estimated by playing many games against opponent
+		- To evaluate policy, fixes policy and plays many games and estimate probability of winning based on frequency of winning in simulations
+			- Not good, as we cannot differentiate which actions of the policy are good (i.e. helps achieve final goal) and which are bad / unused
+	- Value function
+		- Table of numbers - one for each possible state of game, representing probability of winning game from that state
+			- Initialize table with 0.5 for all states, except for losing and winning states, with 0 and 1.0 respectively (i.e. all 'X's or all 'O's)
+		- Employ $\epsilon$-greedy strategy and update table with $V(S_t) \leftarrow V(S_t) + \alpha[V(S_{t+1}) - V(S_t)]$, where $\alpha$ is the step-size parameter
+			- This update rule is example of temporal-difference learning, changes made based on difference between estimates at 2 successive times
+		- Converges for any fixed opponent if step-size reduced properly over time, to true probabilities of winning from each state given optimal play by agent
+			- If step-size parameter does not become 0, can adapt to opponents that change strategy over time
+		- Takes advantage of the actions taken within the simulations via temporal-difference update rule
+- Need not only apply to episodic problems (e.g. tic-tac-toe where game ends after some steps) and discrete time problems
+- Optimal Control
+	- Design controller to minimize / maximize measure of dynamical system's behaviour over time
+	- Defines functional equation (Bellman equation) with dynamical system's state and a value function / "optimal return function"
+		- Can be solved via dynamic programming, computational requirements grow exponentially with state variables
+	- Discrete stochastic version of the optimal control problem can be modeled with Markov decision process
+		- Can be solved via policy iteration method
+- Exercises
+	- 1.1
+		- The policy would converge to the optimal one with both playing to not lose
+		- Yes, it would 
+	- 1.2
+		- 

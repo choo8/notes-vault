@@ -8,3 +8,6 @@
 - [[Smallest Range Covering Elements from K Lists]]
 - [[Meeting Rooms II]]
 - [[Employee Free Time]]
+- [[Rearrange String K Distance Apart]]
+- [[Make Array Non-decreasing or Non-increasing]]
+- [[Reorganize String]]

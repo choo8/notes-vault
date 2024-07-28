@@ -28,3 +28,6 @@
 - [[Lowest Common Ancestor of a Binary Tree III]]
 - [[Convert Binary Search Tree to Sorted Doubly Linked List]]
 - [[Sum Root to Leaf Numbers]]
+- [[Closest Binary Search Tree Value]]
+- [[Number of Good Leaf Nodes Pairs]]
+- [[Smallest Common Region]]

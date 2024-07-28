@@ -4,22 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "678cb54fe93aa66b",
+        "id": "85ba0915ebf1dd33",
         "type": "tabs",
         "children": [
           {
-            "id": "9796f8ff272ad25a",
+            "id": "aa413dd5992b36b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tree.md",
+                "file": "Dynamic Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3dd443004cd9a1f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Number of Ways of Cutting a Pizza.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c5c986c9fad1219",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Union Find.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3f7d32391ce51c7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Number of Islands II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9906bac7ce952257",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Analysis I by Tao.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 297.5
+    "width": 295.5
   },
   "right": {
     "id": "8400c48b3c40a2f0",
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tree.md",
+                "file": "Number of Islands II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tree.md",
+                "file": "Number of Islands II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tree.md"
+                "file": "Number of Islands II.md"
               }
             }
           },
@@ -157,34 +206,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9796f8ff272ad25a",
+  "active": "3f7d32391ce51c7d",
   "lastOpenFiles": [
-    "Sum Root to Leaf Numbers.md",
-    "Tree.md",
-    "Linked List.md",
-    "Hash Tables.md",
-    "Custom Sort String.md",
-    "Insert into a Sorted Circular Linked List.md",
-    "Graph.md",
-    "Union Find.md",
-    "Making A Large Island.md",
-    "Shortest Path in Binary Matrix.md",
-    "Matrix.md",
-    "Interval.md",
-    "Interval List Intersections.md",
-    "Stack.md",
+    "Number of Ways of Cutting a Pizza.md",
     "Dynamic Programming.md",
-    "Stickers to Spell Word.md",
-    "Minimum Add to Make Parentheses Valid.md",
-    "Queue.md",
-    "Convert Binary Search Tree to Sorted Doubly Linked List.md",
-    "Moving Average from Data Stream.md",
-    "Buildings With an Ocean View.md",
-    "Monotonic Queue.md",
+    "Number of Islands II.md",
+    "Union Find.md",
+    "Heap.md",
+    "Reorganize String.md",
     "Array.md",
-    "Valid Palindrome II.md",
-    "Lowest Common Ancestor of a Binary Tree.md",
+    "Minimum Increment to Make Array Unique.md",
+    "Machine Learning System Design Interview by Ali Aminian & Alex Xu.md",
+    "Tree.md",
+    "Heaters.md",
+    "Make Array Non-decreasing or Non-increasing.md",
+    "Rearrange String K Distance Apart.md",
     "Lowest Common Ancestor of a Binary Tree III.md",
+    "Smallest Common Region.md",
+    "Lowest Common Ancestor of a Binary Search Tree.md",
+    "Optimal Account Balancing.md",
+    "Graph.md",
+    "Analysis I by Tao.md",
+    "Number of Distinct Islands.md",
+    "Number of Good Leaf Nodes Pairs.md",
+    "Trie.md",
+    "Robot Room Cleaner.md",
+    "Valid Palindrome III.md",
+    "Stack.md",
+    "Matrix.md",
     "Untitled",
     "Untitled.canvas"
   ]

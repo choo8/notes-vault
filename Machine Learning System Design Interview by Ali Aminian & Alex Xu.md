@@ -1,0 +1,41 @@
+# Chapter 1
+- Interview framework
+	- Clarifying requirements
+		- Business objective
+		- Features that system needs to support
+		- Data
+		- Constraints
+		- Scale
+		- Performance
+	- Framing the problem as an ML task
+		- ML objective
+		- Input / Output to system
+		- ML category
+			- Supervised learning
+				- Classification
+					- Binary
+					- Multiclass
+				- Regression
+			- Unsupervised learning
+				- Clustering
+				- Association
+				- Dimensionality Reduction
+			- Reinforcement learning
+	- Data preparation
+		- Data engineering
+		- Feature engineering
+	- Model development
+		- Model selection
+		- Model training
+	- Evaluation
+		- Offline evaluation
+		- Online evaluation
+	- Development and Serving
+		- Cloud vs on-device deployment
+		- Model compression
+		- Test in production
+		- 
+	- Monitoring and Infrastructure
+		- What to monitor
+# Chapter 2
+- 

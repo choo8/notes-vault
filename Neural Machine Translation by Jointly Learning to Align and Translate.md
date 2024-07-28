@@ -1,0 +1,13 @@
+- Neural machine translation aims to perform language translation tasks by training a single neural network jointly trained to maximize translation performance
+- Models are typically encoder-decoders, encoding source sentence into a fixed-length vector then generating a translation from it using the decoder
+	- Not having a fixed-length vector could improve performance
+	- Design a new model to allow for soft-search over the source sentence for parts relevant to predicting target word, without explicitly forming those parts as hard segments
+- Traditional approaches
+	- Phrase-based translation systems - many small sub-components separately tuned
+	- Encoder-decoder
+		- All necessary information has to be compressed into a fixed length vector, making it difficult to translate longer sentences
+		- Shown that translation performance deteriorates rapidly with increasing sentence length
+- Paper's main idea
+	- Extend encoder-decoder idea to align and translate jointly - to generate a word, perform a soft-search over all words in the source sentence to get relevant information, then use context vectors related to those words in source sentence + previously generated words to predict next word
+- Translation, from a probabilistic perspective, is equivalent to finding a target sentence $y$ that maximizes the conditional probability of $y$ given source sentence $x$ ($argmax_{y}p(y \vert x)$)
+	- Typically consists of two components - Encoder that encodes $x$ and decoder that decodes into $y$ (e.g. Recurrent Neural Networks to encode a variable-length source sentence into a fixed-length vector, then decoding it into a variable-length target sentence)

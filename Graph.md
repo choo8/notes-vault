@@ -26,3 +26,5 @@
 - [[Alien Dictionary]]
 - [[Nested List Weight Sum]]
 - [[Shortest Path in Binary Matrix]]
+- [[Robot Room Cleaner]]
+- [[Number of Distinct Islands]]
